@@ -29,13 +29,9 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
     [locationManager startUpdatingLocation];
     
-    NSString *udid;
-    
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
-        udid = [UIDevice currentDevice].identifierForVendor.UUIDString;
-    else
-        udid = [UIDevice currentDevice].uniqueIdentifier;
-    //NSLog(@"%@", udid);
+    CFUUIDRef udidref = CFUUIDCreate(NULL);
+    NSString *udid = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, udidref));
+
     NSNumber *latitude = [NSNumber numberWithDouble:locationManager.location.coordinate.latitude];
     NSNumber *longitude = [NSNumber numberWithDouble:locationManager.location.coordinate.longitude];
     

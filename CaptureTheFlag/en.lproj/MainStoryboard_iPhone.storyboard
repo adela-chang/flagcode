@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ZpG-lA-Vea">
             <objects>
                 <viewController id="jhW-A3-4AM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehY-C3-O3x"/>
+                        <viewControllerLayoutGuide type="bottom" id="dfi-ze-AUL"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SLU-SR-vNi">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ2-PQ-lZi">
+                                <rect key="frame" x="46" y="228" width="229" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="229" id="4qa-JA-1hG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-9z-Cmi">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="46" y="337" width="229" height="30"/>
                                 <state key="normal" title="Join Game">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aJ2-PQ-lZi" firstAttribute="top" secondItem="SLU-SR-vNi" secondAttribute="top" constant="228" id="5rX-vb-OFl"/>
-                            <constraint firstItem="aJ2-PQ-lZi" firstAttribute="centerX" secondItem="SLU-SR-vNi" secondAttribute="centerX" type="default" id="K2b-vT-73J"/>
-                            <constraint firstItem="eNF-9z-Cmi" firstAttribute="leading" secondItem="aJ2-PQ-lZi" secondAttribute="leading" type="default" id="PQQ-tX-QGG"/>
-                            <constraint firstItem="eNF-9z-Cmi" firstAttribute="trailing" secondItem="aJ2-PQ-lZi" secondAttribute="trailing" type="default" id="cre-dr-fFK"/>
+                            <constraint firstItem="aJ2-PQ-lZi" firstAttribute="centerX" secondItem="SLU-SR-vNi" secondAttribute="centerX" id="K2b-vT-73J"/>
+                            <constraint firstItem="eNF-9z-Cmi" firstAttribute="leading" secondItem="aJ2-PQ-lZi" secondAttribute="leading" id="PQQ-tX-QGG"/>
+                            <constraint firstItem="eNF-9z-Cmi" firstAttribute="trailing" secondItem="aJ2-PQ-lZi" secondAttribute="trailing" id="cre-dr-fFK"/>
                             <constraint firstAttribute="bottom" secondItem="eNF-9z-Cmi" secondAttribute="bottom" constant="201" id="wxS-m2-hLy"/>
                         </constraints>
                     </view>
@@ -57,26 +54,33 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4l9-f9-4vu"/>
+                        <viewControllerLayoutGuide type="bottom" id="b2f-CT-Rvi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5r-iX-Bcr">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <barButtonItem title="Item" id="79d-5Z-wxi"/>
                                 </items>
                             </toolbar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3x-Yk-D3o"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3x-Yk-D3o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="bottom" secondItem="q5r-iX-Bcr" secondAttribute="top" type="default" id="9dc-g3-vu6"/>
-                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="BaU-ay-uF7"/>
-                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Dz8-I9-Wun"/>
-                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Kvz-SZ-ddE"/>
-                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="U86-e3-kvt"/>
-                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="dpq-cG-jCW"/>
-                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="j3b-fm-fTT"/>
+                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="bottom" secondItem="q5r-iX-Bcr" secondAttribute="top" id="9dc-g3-vu6"/>
+                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="BaU-ay-uF7"/>
+                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="Dz8-I9-Wun"/>
+                            <constraint firstItem="o3x-Yk-D3o" firstAttribute="top" secondItem="3" secondAttribute="top" id="Kvz-SZ-ddE"/>
+                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="U86-e3-kvt"/>
+                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="dpq-cG-jCW"/>
+                            <constraint firstItem="q5r-iX-Bcr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="j3b-fm-fTT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,21 +91,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="CLLocationManager" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CLLocationManager.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationManager" candidateClass="CLLocationManager"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

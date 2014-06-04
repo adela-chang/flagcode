@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+.imageContainer {
+    text-align: center;
+}
+.imageContainer img {
+    display: block;
+}
+.imageContainer div {
+    position: relative;
+    display: inline-block;
+    /* if you need ie6/7 support */
+    *display: inline;
+    zoom: 1;
+}
+
+.mainContainer {
+	width:600px;
+	min-height: 300px;
+	height: 100%;
+	margin: 0 auto;
+	border: 2px solid;
+	border-color: red blue blue red;
+}
+
+.demoLinks{
+	width:180px;
+	padding:10px;
+	float:left;
+	height: 100%;
+}
+
+.demos {
+	padding:20px;
+	width=400px
+	float:right;
+}
